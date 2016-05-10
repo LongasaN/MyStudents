@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  MyStudents
 //
-//  Created by student on 5/10/16.
+//  Created by Nina Longasa on 5/10/16.
 //  Copyright © 2016 CHCAppDev. All rights reserved.
 //
 
@@ -16,6 +16,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
+        if let nav = window?.rootViewController as? UINavigationController {
+            if let top = nav.topViewController {
+                if top.respondsToSelector("setManagedObjectContext:") {
+                    top.performSelector("setManagedObjectContext:", withObject:
+                        managedObjectContext)
+                }
+            }
+        }
+        
         // Override point for customization after application launch.
         return true
     }

@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  MyStudents
 //
-//  Created by student on 5/10/16.
+//  Created by Nina Longasa on 5/10/16.
 //  Copyright © 2016 CHCAppDev. All rights reserved.
 //
 
