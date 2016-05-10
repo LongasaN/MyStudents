@@ -51,6 +51,7 @@ class StudentDetailViewController: UIViewController {
                 selectedStudent.lastName = lastName
                 selectedStudent.course = course
                 selectedStudent.gpa = gpa
+            
         } else if selectedStudent == nil {
             
             if let firstName = firstNameTextField.text, lastName = lastNameTextField.text, course = courseTextField.text, gpa = gpaTextField.text, entity = NSEntityDescription.entityForName("Student", inManagedObjectContext: managedObjectContext) where !firstName.isEmpty && !lastName.isEmpty && !course.isEmpty && !gpa.isEmpty {

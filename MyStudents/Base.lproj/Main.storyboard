@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="obz-QO-l18">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="nNX-mV-Wh7">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -15,7 +15,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StudentCell" textLabel="DAG-Cd-1Kf" detailTextLabel="zl2-oN-k4y" style="IBUITableViewCellStyleSubtitle" id="1xj-zw-YZN">
-                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="92" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1xj-zw-YZN" id="Obr-Jz-0kJ">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
@@ -44,10 +44,11 @@
                             <outlet property="delegate" destination="obz-QO-l18" id="4Em-Uo-KBn"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="MyStudents" id="Khu-1o-COF"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PfZ-0k-OLZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="218" y="431"/>
+            <point key="canvasLocation" x="969" y="578"/>
         </scene>
         <!--Student Detail View Controller-->
         <scene sceneID="KO4-0M-cEU">
@@ -117,7 +118,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vAh-QO-tIO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="592" y="431"/>
+            <point key="canvasLocation" x="1388" y="578"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="13i-ze-Bz1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nNX-mV-Wh7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bgp-23-nd2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="obz-QO-l18" kind="relationship" relationship="rootViewController" id="C8h-nF-kJe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vBd-fZ-s5X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="437" y="578"/>
         </scene>
     </scenes>
 </document>
